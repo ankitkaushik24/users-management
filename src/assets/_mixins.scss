@@ -1,0 +1,18 @@
+$color-fog-grey: #f2f6f9;
+$color-primary: #04ba5f;
+$color-secondary: #f7941d;
+
+
+@mixin scroll-bar {
+  &::-webkit-scrollbar {
+    width: 12px;
+    background: $color-fog-grey;
+  }
+  &::-webkit-scrollbar-track-piece {
+    background: $color-fog-grey;
+  }
+  &::-webkit-scrollbar-thumb {
+    background: #aab9c7;
+    border: 2px solid $color-fog-grey;
+  }
+}

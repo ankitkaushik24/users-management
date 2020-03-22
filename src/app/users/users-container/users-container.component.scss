@@ -1,0 +1,40 @@
+@import "../../../assets/mixins";
+
+:host {
+  flex-grow: 1;
+  flex-direction: column;
+  display: flex;
+}
+
+.filters-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-shrink: 0;
+  padding: 10px 15px;
+
+  aptm-dual-slider {
+    flex-basis: 400px;
+  }
+
+  .name-filter {
+    padding: 10px;
+    border: 1px solid $color-primary;
+    color: $color-primary;
+    border-radius: 4px;
+  }
+}
+
+aptm-user-details {
+  height: 200px;
+}
+
+.users-list-container {
+  padding: 40px 20px;
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(3, 1fr);
+  background: #f3f3f3;
+  flex-grow: 1;
+  flex-shrink: 0;
+}

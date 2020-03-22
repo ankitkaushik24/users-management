@@ -1,0 +1,30 @@
+<div class="hg-slider-label">{{sliderLabel}}</div>
+<div class="wrapper">
+  <div class="hg-slider-data"><p>Min Age</p>
+    <div class="display-value-label">{{startThumbValue}}</div>
+  </div>
+  <div class="container"
+       (dragover)="allowDrop($event)" (drop)="onDrop($event)">
+    <div class="slider" #slider
+         [ngStyle]="{'width.px': sliderWidth}">
+      <div class="track" #track></div>
+    </div>
+    <div #startThumb class="thumb"
+         (dragstart)="startThumb.classList.add('dragging')"
+         (dragend)="onDragEnd($event)"
+         (drag)="dragStartThumb(slider, $event)"
+         [ngStyle]="{'width.px': thumbWidth, 'height.px': thumbWidth}"
+         draggable="true">
+    </div>
+    <div #endThumb class="thumb"
+         (dragstart)="endThumb.classList.add('dragging')"
+         (dragend)="onDragEnd($event)"
+         (drag)="dragEndThumb(slider, $event)"
+         [ngStyle]="{'width.px': thumbWidth, 'height.px': thumbWidth}"
+         draggable="true">
+    </div>
+  </div>
+  <div class="hg-slider-data"><p>Max Age</p>
+    <div class="display-value-label">{{endThumbValue}}</div>
+  </div>
+</div>

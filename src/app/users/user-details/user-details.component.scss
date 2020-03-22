@@ -1,0 +1,27 @@
+@import "../../../assets/mixins";
+
+:host {
+  display: flex;
+  box-shadow: 2px 2px 6px 0px #00968852;
+  background: #fff;
+}
+
+dl {
+  display: grid;
+  grid-template-columns: 80px 1fr;
+  grid-gap: 10px 5px;
+  color: #04ba5f;
+  padding: 15px;
+  flex-grow: 1;
+  margin: 0;
+}
+
+dt {
+  &::after {
+    content: ':'
+  }
+}
+
+dd {
+  margin: 0;
+}

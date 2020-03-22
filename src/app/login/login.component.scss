@@ -1,0 +1,39 @@
+@import "../../assets/mixins";
+
+:host {
+  flex-shrink: 0;
+  display: flex;
+  flex-grow: 1;
+}
+
+.login-cover {
+  width: 50%;
+  object-fit: cover;
+}
+
+.login-form-container {
+  background: $color-primary;
+  flex-grow: 1;
+  flex-shrink: 0;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  input {
+    border-radius: 8px;
+    border: 0;
+    padding: 10px;
+    margin: 15px;
+  }
+
+  button {
+    padding: 10px;
+    border-color: $color-secondary;
+    background: $color-secondary;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    margin: 30px 15px 0;
+  }
+}

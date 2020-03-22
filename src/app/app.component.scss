@@ -1,0 +1,40 @@
+@import "../assets/mixins";
+
+:host {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  @include scroll-bar;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  padding: 10px 10px 0;
+  flex-basis: 70px;
+  display: flex;
+  flex-shrink: 0;
+  justify-content: space-between;
+  align-items: center;
+  background: #fff;
+  box-shadow: 0 2px 4px 1px rgba(0, 0, 0, 0.75);
+  margin-bottom: 4px;
+  opacity: 0.8;
+}
+
+.logout-btn {
+  background: transparent;
+  border: 0;
+  color: green;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 18px;
+  letter-spacing: 2px;
+}
+
+.ap-logo {
+  width: 10%;
+  height: 100%;
+}

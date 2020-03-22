@@ -1,0 +1,7 @@
+<div class="filters-container">
+  <input type="text" (input)="filterByName($event.target.value)" class="name-filter" placeholder="Filter by Name">
+  <aptm-dual-slider [minRange]="10" [maxRange]="120" (valueChange)="filterByAge($event)"></aptm-dual-slider>
+</div>
+<section class="users-list-container">
+  <aptm-user-details *ngFor="let user of users" [user]="user"></aptm-user-details>
+</section>
