@@ -3,3 +3,10 @@ body {
   width: 100vw;
   margin: 0;
 }
+
+input {
+  border: 0;
+  &.ng-touched.ng-invalid {
+    border: 2px solid #e91e1e;
+  }
+}
