@@ -7,14 +7,14 @@
 }
 
 .login-cover {
-  width: 50%;
+  width: 0;
+  flex-grow: 1;
   object-fit: cover;
 }
 
 .login-form-container {
   background: $color-primary;
-  flex-grow: 1;
-  flex-shrink: 0;
+  flex-basis: 400px;
   padding: 15px;
   display: flex;
   flex-direction: column;

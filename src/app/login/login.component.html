@@ -2,5 +2,5 @@
 <form [formGroup]="loginForm" class="login-form-container" (ngSubmit)="login()">
   <input type="text" formControlName="accountId" placeholder="Enter User ID" />
   <input type="password" formControlName="pswd"/>
-  <button [aptmFormSubmit]="loginForm">Login</button>
+  <button [aptmFormSubmit]="loginForm" [disabled]="'logging' | isLoading | async">Login</button>
 </form>

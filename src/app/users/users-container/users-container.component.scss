@@ -12,6 +12,7 @@
   justify-content: space-around;
   flex-shrink: 0;
   padding: 10px 15px;
+  flex-wrap: wrap;
 
   aptm-dual-slider {
     flex-basis: 400px;
@@ -37,4 +38,12 @@ aptm-user-details {
   background: #f3f3f3;
   flex-grow: 1;
   flex-shrink: 0;
+
+  @include mobile(640px) {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @include mobile() {
+    grid-template-columns: 1fr;
+  }
 }

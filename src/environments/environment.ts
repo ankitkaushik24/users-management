@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  rootUrl: 'https://apertum-interview.herokuapp.com/api/user/login'
+  rootUrl: 'https://apertum-interview.herokuapp.com'
 };
 
 /*

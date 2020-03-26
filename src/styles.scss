@@ -10,3 +10,8 @@ input {
     border: 2px solid #e91e1e;
   }
 }
+
+button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}

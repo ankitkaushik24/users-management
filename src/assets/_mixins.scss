@@ -3,6 +3,12 @@ $color-primary: #04ba5f;
 $color-secondary: #f7941d;
 
 
+@mixin mobile($query: 410px) {
+  @media screen and (max-width: $query) {
+    @content;
+  }
+}
+
 @mixin scroll-bar {
   &::-webkit-scrollbar {
     width: 12px;
